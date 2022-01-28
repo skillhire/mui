@@ -1,9 +1,12 @@
 import React from 'react';
+import { List, ListItem, ListItemText } from '@mui/material'
 
 const Label = ({ label="Hello, World" }) => (
-  <div>
-    { label }
-  </div>
+  <List>
+    <ListItem>
+      <ListItemText primary={ label } />
+    </ListItem>
+  </List>
 )
 
-export default Label 
+export default Label
