@@ -11,16 +11,11 @@ const LineItem = ({
 	icon: Icon,
 	primary,
 	secondary,
-	size = 24,
-	color = 'textSecondary',
 	disablePadding = false,
 	secondaryAction,
 	onClick,
 }) => {
-	const classes = useStyles({
-		size,
-		color,
-	})
+	const classes = useStyles()
 
 	return (
 		<ListItem
@@ -48,13 +43,5 @@ const LineItem = ({
 export default LineItem
 
 const useStyles = makeStyles((theme) => ({
-	icon: {
-		height: (props) => props.size,
-		width: (props) => props.size,
-		marginLeft: theme.spacing(1),
-		color: (props) =>
-			props.color == 'primary'
-				? theme.palette.primary.main
-				: theme.palette.text.secondary,
-	},
+	root: {}
 }))
