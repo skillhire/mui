@@ -1,12 +1,13 @@
 import React from 'react';
-import { List, ListItem, ListItemText } from '@mui/material'
+import { Button } from '@mui/material'
 
-const Label = ({ label="Hello, World" }) => (
-  <List>
-    <ListItem>
-      <ListItemText primary={ label } />
-    </ListItem>
-  </List>
+const MuiButton = ({ label="Hello, World" }) => (
+  <Button
+    color="primary"
+    variant='contained'        
+  >
+    {label}
+  </Button>
 )
 
-export default Label
+export default MuiButton
