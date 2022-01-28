@@ -24,12 +24,9 @@ const LineItem = ({
 			disablePadding={disablePadding}
 			onClick={onClick ? onClick : null}
 		>
-			<ListItemIcon>
-				{Icon && <Icon className={classes.icon} />}
-			</ListItemIcon>
 			<ListItemText
 				primary={primary}
-				secondary={secondary}
+				secondary={"Subtitle"}
 			/>
 			{secondaryAction && (
 				<ListItemSecondaryAction>

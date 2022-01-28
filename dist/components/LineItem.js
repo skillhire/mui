@@ -27,11 +27,9 @@ var LineItem = function LineItem(_ref) {
     disableGutters: true,
     disablePadding: disablePadding,
     onClick: onClick ? onClick : null
-  }, /*#__PURE__*/_react["default"].createElement(_material.ListItemIcon, null, Icon && /*#__PURE__*/_react["default"].createElement(Icon, {
-    className: classes.icon
-  })), /*#__PURE__*/_react["default"].createElement(_material.ListItemText, {
+  }, /*#__PURE__*/_react["default"].createElement(_material.ListItemText, {
     primary: primary,
-    secondary: secondary
+    secondary: "Subtitle"
   }), secondaryAction && /*#__PURE__*/_react["default"].createElement(_material.ListItemSecondaryAction, null, secondaryAction));
 };
 
