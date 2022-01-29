@@ -51,9 +51,9 @@ var TextInput = function TextInput(_ref) {
       error = _ref.error,
       props = _objectWithoutProperties(_ref, _excluded);
 
-  var classes = useStyles({
-    error: error
-  });
+  /*const classes = useStyles({
+  error: error,
+  })*/
   return /*#__PURE__*/_react["default"].createElement(_material.FormControl, {
     fullWidth: true,
     className: className
