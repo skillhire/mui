@@ -11,7 +11,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _ApiContext = _interopRequireDefault(require("../context/ApiContext"));
 
-var _hooks = require("hooks");
+var _hooks = require("../hooks");
 
 var _excluded = ["url", "name"];
 

@@ -7,11 +7,11 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _material = require("@mui/material");
+var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _styles = require("@mui/styles");
 
-var _excluded = ["label", "value"];
+var _excluded = ["children"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -19,20 +19,32 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var LineItem = function LineItem(_ref) {
-  var label = _ref.label,
-      value = _ref.value,
-      rest = _objectWithoutProperties(_ref, _excluded);
+var PanelLayout = function PanelLayout(_ref) {
+  var children = _ref.children,
+      props = _objectWithoutProperties(_ref, _excluded);
 
-  return /*#__PURE__*/_react["default"].createElement(_material.ListItem, null, /*#__PURE__*/_react["default"].createElement(_material.ListItemText, {
-    primary: /*#__PURE__*/_react["default"].createElement(_material.Typography, {
-      variant: "body2"
-    }, label),
-    secondary: /*#__PURE__*/_react["default"].createElement(_material.Typography, {
-      variant: "body1"
-    }, value ? value : '-')
-  }));
+  var classes = useStyles();
+  return /*#__PURE__*/_react["default"].createElement("div", {
+    className: classes.root
+  }, children);
 };
 
-var _default = LineItem;
+PanelLayout.propTypes = {
+  children: _propTypes["default"].any.isRequired
+};
+var _default = PanelLayout;
 exports["default"] = _default;
+var useStyles = (0, _styles.makeStyles)(function (theme) {
+  return {
+    root: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+      width: '100%',
+      flexGrow: 1,
+      height: 'calc(100vh)',
+      overflow: 'none',
+      zIndex: 0
+    }
+  };
+});

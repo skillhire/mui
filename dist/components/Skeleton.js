@@ -11,7 +11,7 @@ var _material = require("@mui/material");
 
 var _styles = require("@mui/styles");
 
-var _excluded = ["label", "value"];
+var _excluded = ["height", "width"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -19,20 +19,32 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var LineItem = function LineItem(_ref) {
-  var label = _ref.label,
-      value = _ref.value,
-      rest = _objectWithoutProperties(_ref, _excluded);
+var MuiSkeleton = function MuiSkeleton(_ref) {
+  var _ref$height = _ref.height,
+      height = _ref$height === void 0 ? 14 : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? 100 : _ref$width,
+      props = _objectWithoutProperties(_ref, _excluded);
 
-  return /*#__PURE__*/_react["default"].createElement(_material.ListItem, null, /*#__PURE__*/_react["default"].createElement(_material.ListItemText, {
-    primary: /*#__PURE__*/_react["default"].createElement(_material.Typography, {
-      variant: "body2"
-    }, label),
-    secondary: /*#__PURE__*/_react["default"].createElement(_material.Typography, {
-      variant: "body1"
-    }, value ? value : '-')
-  }));
+  var classes = useStyles();
+  return /*#__PURE__*/_react["default"].createElement(_material.Skeleton, {
+    width: width,
+    height: height,
+    className: classes.skeleton,
+    variant: "rectangular",
+    animation: "wave"
+  });
 };
 
-var _default = LineItem;
+var _default = MuiSkeleton;
 exports["default"] = _default;
+var useStyles = (0, _styles.makeStyles)(function (theme) {
+  return {
+    skeleton: {
+      opacity: 0.2,
+      margin: theme.spacing(1),
+      borderRadius: theme.shape.borderRadius,
+      backgroundColor: theme.palette.text.secondary
+    }
+  };
+});
