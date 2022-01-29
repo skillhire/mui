@@ -13,7 +13,7 @@ var _material = require("@mui/material");
 
 var _moment = _interopRequireDefault(require("moment"));
 
-var _styles = require("components/inputs/TextInput/styles");
+var _styles = require("./inputs/TextInput/styles");
 
 var _excluded = ["required", "label", "name", "value", "handleChange", "placeholder", "onKeyPress"];
 

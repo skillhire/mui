@@ -11,7 +11,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _ApiContext = _interopRequireDefault(require("../context/ApiContext"));
 
-var _Autosuggest = _interopRequireDefault(require("components/Autosuggest"));
+var _Autosuggest = _interopRequireDefault(require("./Autosuggest"));
 
 var _styles = require("@mui/styles");
 

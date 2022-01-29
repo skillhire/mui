@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import ApiContext from '../context/ApiContext'
-import Autosuggest from 'components/Autosuggest'
+import Autosuggest from './Autosuggest'
 import { makeStyles } from '@mui/styles'
 import { buildOptions } from '../utils'
 
