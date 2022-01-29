@@ -13,7 +13,7 @@ var _material = require("@mui/material");
 
 var _styles = require("@mui/styles");
 
-var _hooks = require("../hooks");
+var _useResponsive2 = _interopRequireDefault(require("../hooks/useResponsive"));
 
 var _excluded = ["children", "desktopWidth"];
 
@@ -31,7 +31,7 @@ var Layout = function Layout(_ref) {
       desktopWidth = _ref$desktopWidth === void 0 ? 60 : _ref$desktopWidth,
       props = _objectWithoutProperties(_ref, _excluded);
 
-  var _useResponsive = (0, _hooks.useResponsive)(),
+  var _useResponsive = (0, _useResponsive2["default"])(),
       isMobile = _useResponsive.isMobile;
 
   var classes = useStyles({

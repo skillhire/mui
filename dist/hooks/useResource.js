@@ -11,7 +11,9 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _ApiContext = _interopRequireDefault(require("../context/ApiContext"));
 
-var _hooks = require("../hooks");
+var _useAlerts2 = _interopRequireDefault(require("../hooks/useAlerts"));
+
+var _useLoaders2 = _interopRequireDefault(require("../hooks/useLoaders"));
 
 var _excluded = ["url", "name"];
 
@@ -73,12 +75,12 @@ var useResource = function useResource(_ref) {
   var _useContext = (0, _react.useContext)(_ApiContext["default"]),
       api = _useContext.api;
 
-  var _useLoaders = (0, _hooks.useLoaders)(),
+  var _useLoaders = (0, _useLoaders2["default"])(),
       isLoading = _useLoaders.isLoading,
       showLoading = _useLoaders.showLoading,
       hideLoading = _useLoaders.hideLoading;
 
-  var _useAlerts = (0, _hooks.useAlerts)(),
+  var _useAlerts = (0, _useAlerts2["default"])(),
       showAlertError = _useAlerts.showAlertError;
 
   var _useState = (0, _react.useState)(false),

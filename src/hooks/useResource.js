@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import ApiContext from '../context/ApiContext'
-import { useAlerts, useLoaders } from '../hooks'
+import useAlerts from '../hooks/useAlerts'
+import useLoaders from '../hooks/useLoaders'
 
 /* useResource
   A base hook that allows for CRUD operations of a REST API that follows

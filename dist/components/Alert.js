@@ -11,7 +11,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _AppContext = _interopRequireDefault(require("../context/AppContext"));
 
-var _hooks = require("../hooks");
+var _useAlerts = _interopRequireDefault(require("../hooks/useAlerts"));
 
 var _material = require("@mui/material");
 

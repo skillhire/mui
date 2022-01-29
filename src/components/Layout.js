@@ -2,7 +2,7 @@ import React from 'react'
 import clsx from 'clsx'
 import { Box } from '@mui/material'
 import { makeStyles } from '@mui/styles'
-import { useResponsive } from '../hooks'
+import useResponsive from '../hooks/useResponsive'
 
 const Layout = ({ children, desktopWidth=60, ...props }) => {
 	const { isMobile } = useResponsive()

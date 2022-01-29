@@ -4,7 +4,7 @@ import React, {
 	useContext,
 } from 'react'
 import AppContext from '../context/AppContext'
-import { useAlerts } from '../hooks'
+import useAlerts from '../hooks/useAlerts'
 import {
 	Fade,
 	IconButton,

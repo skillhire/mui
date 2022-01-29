@@ -30,7 +30,7 @@ const TextInput = ({
 	error,
 	...props
 }) => {
-  
+
 	const classes = useStyles({
 		error: error,
 	})
