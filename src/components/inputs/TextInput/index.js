@@ -6,7 +6,7 @@ import {
 } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import clsx from 'clsx'
-import { useStyles } from './styles'
+//import { useStyles } from './styles'
 
 const TextInput = ({
 	className,
@@ -30,7 +30,6 @@ const TextInput = ({
 	error,
 	...props
 }) => {
-
 	const classes = useStyles({
 		error: error,
 	})
@@ -38,14 +37,13 @@ const TextInput = ({
 	return (
 		<FormControl
 			fullWidth
-			className={clsx(className, classes.root)}
+			className={className}
 		>
 			<Typography variant="caption" color="textSecondary">
 				{label}
 			</Typography>
 			<InputBase
 				rows={rows}
-				className={classes.inputBase}
 				multiline={multiline}
 				autoComplete="off"
 				fullWidth

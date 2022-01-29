@@ -15,8 +15,6 @@ var _styles = require("@mui/styles");
 
 var _clsx = _interopRequireDefault(require("clsx"));
 
-var _styles2 = require("./styles");
-
 var _excluded = ["className", "required", "label", "type", "name", "margin", "value", "multiline", "handleChange", "rows", "placeholder", "disabled", "onKeyPress", "autoComplete", "startIcon", "endIcon", "isClearable", "isLoading", "error"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -29,6 +27,7 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
+//import { useStyles } from './styles'
 var TextInput = function TextInput(_ref) {
   var className = _ref.className,
       required = _ref.required,
@@ -52,18 +51,17 @@ var TextInput = function TextInput(_ref) {
       error = _ref.error,
       props = _objectWithoutProperties(_ref, _excluded);
 
-  var classes = (0, _styles2.useStyles)({
+  var classes = useStyles({
     error: error
   });
   return /*#__PURE__*/_react["default"].createElement(_material.FormControl, {
     fullWidth: true,
-    className: (0, _clsx["default"])(className, classes.root)
+    className: className
   }, /*#__PURE__*/_react["default"].createElement(_material.Typography, {
     variant: "caption",
     color: "textSecondary"
   }, label), /*#__PURE__*/_react["default"].createElement(_material.InputBase, {
     rows: rows,
-    className: classes.inputBase,
     multiline: multiline,
     autoComplete: "off",
     fullWidth: true,
