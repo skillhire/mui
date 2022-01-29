@@ -7,9 +7,12 @@ export { default as useEnterKey } from './hooks/useEnterKey'
 export { default as useLoaders } from './hooks/useLoaders'
 export { default as useMenu } from './hooks/useMenu'
 export { default as useResponsive } from './hooks/useResponsive'
+export { default as useResource } from './hooks/useResource'
 export { default as useSelected } from './hooks/useSelected'
 export { default as useTabs } from './hooks/useTabs'
 
 //Context 
 export { default as AppContext } from './context/AppContext'
 export { default as AppProvider } from './context/AppProvider'
+export { default as ApiContext } from './context/ApiContext'
+export { default as ApiProvider } from './context/ApiProvider'
