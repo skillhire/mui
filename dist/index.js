@@ -9,6 +9,12 @@ Object.defineProperty(exports, "AppContext", {
     return _AppContext["default"];
   }
 });
+Object.defineProperty(exports, "AppProvider", {
+  enumerable: true,
+  get: function get() {
+    return _AppProvider["default"];
+  }
+});
 Object.defineProperty(exports, "LineItem", {
   enumerable: true,
   get: function get() {
@@ -83,5 +89,7 @@ var _useSelected = _interopRequireDefault(require("./hooks/useSelected"));
 var _useTabs = _interopRequireDefault(require("./hooks/useTabs"));
 
 var _AppContext = _interopRequireDefault(require("./context/AppContext"));
+
+var _AppProvider = _interopRequireDefault(require("./context/AppProvider"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }

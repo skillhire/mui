@@ -12,3 +12,4 @@ export { default as useTabs } from './hooks/useTabs'
 
 //Context 
 export { default as AppContext } from './context/AppContext'
+export { default as AppProvider } from './context/AppProvider'

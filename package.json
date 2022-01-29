@@ -1,6 +1,6 @@
 {
   "name": "@skillhire/mui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "MUI v5 library",
   "main": "index.js",
   "scripts": {
