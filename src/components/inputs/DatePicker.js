@@ -5,7 +5,7 @@ import {
 	Typography,
 } from '@mui/material'
 import moment from 'moment'
-import { useStyles } from './inputs/TextInput/styles'
+import { useStyles } from './TextInput/styles'
 
 const DatePicker = ({
 	required,
