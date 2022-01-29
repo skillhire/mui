@@ -17,7 +17,7 @@ var _iconsMaterial = require("@mui/icons-material");
 
 var _clsx2 = _interopRequireDefault(require("clsx"));
 
-var _ProgressLoader = _interopRequireDefault(require("./ProgressLoader"));
+var _ProgressLoader = _interopRequireDefault(require("../ProgressLoader"));
 
 var _reactDropzone = _interopRequireDefault(require("react-dropzone"));
 

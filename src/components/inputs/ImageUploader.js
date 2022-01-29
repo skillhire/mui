@@ -3,7 +3,7 @@ import { IconButton, Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import { DeleteOutlined } from '@mui/icons-material'
 import clsx from 'clsx'
-import ProgressLoader from './ProgressLoader'
+import ProgressLoader from '../ProgressLoader'
 import Dropzone from 'react-dropzone'
 import {
 	UploadCloud,
