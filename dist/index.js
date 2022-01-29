@@ -147,12 +147,6 @@ Object.defineProperty(exports, "IconButton", {
     return _IconButton["default"];
   }
 });
-Object.defineProperty(exports, "Image", {
-  enumerable: true,
-  get: function get() {
-    return _Image["default"];
-  }
-});
 Object.defineProperty(exports, "ImageUploader", {
   enumerable: true,
   get: function get() {
@@ -443,8 +437,6 @@ var _EditableTextInput = _interopRequireDefault(require("./components/inputs/Edi
 var _IconButton = _interopRequireDefault(require("./components/IconButton"));
 
 var _ListItemButton = _interopRequireDefault(require("./components/ListItemButton"));
-
-var _Image = _interopRequireDefault(require("./components/Image"));
 
 var _CheckboxGroupInput = _interopRequireDefault(require("./components/inputs/CheckboxGroupInput"));
 
