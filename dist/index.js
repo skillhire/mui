@@ -93,12 +93,6 @@ Object.defineProperty(exports, "CheckboxInput", {
     return _CheckboxInput["default"];
   }
 });
-Object.defineProperty(exports, "ComponentIcon", {
-  enumerable: true,
-  get: function get() {
-    return _ComponentIcon["default"];
-  }
-});
 Object.defineProperty(exports, "CoverImage", {
   enumerable: true,
   get: function get() {
@@ -435,8 +429,6 @@ var _ButtonLoader = _interopRequireDefault(require("./components/ButtonLoader"))
 var _Center = _interopRequireDefault(require("./components/Center"));
 
 var _CenterPanel = _interopRequireDefault(require("./components/CenterPanel"));
-
-var _ComponentIcon = _interopRequireDefault(require("./components/ComponentIcon"));
 
 var _CoverImage = _interopRequireDefault(require("./components/CoverImage"));
 
