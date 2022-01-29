@@ -13,8 +13,6 @@ var _ApiContext = _interopRequireDefault(require("../context/ApiContext"));
 
 var _hooks = require("hooks");
 
-var _reactRouter = require("react-router");
-
 var _excluded = ["url", "name"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -74,8 +72,6 @@ var useResource = function useResource(_ref) {
 
   var _useContext = (0, _react.useContext)(_ApiContext["default"]),
       api = _useContext.api;
-
-  var history = (0, _reactRouter.useHistory)();
 
   var _useLoaders = (0, _hooks.useLoaders)(),
       isLoading = _useLoaders.isLoading,
@@ -457,7 +453,6 @@ var useResource = function useResource(_ref) {
   var handleSort = function handleSort(sortBy) {
     sortDirection == 'asc' ? setSortDirection('desc') : setSortDirection('asc');
     setSortKey(sortBy);
-    history.push("?sort_key=".concat(sortKey, "&sort_direction=").concat(sortDirection));
   };
 
   (0, _react.useEffect)(function () {

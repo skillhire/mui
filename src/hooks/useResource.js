@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import ApiContext from '../context/ApiContext'
 import { useAlerts, useLoaders } from 'hooks'
-import { useHistory } from 'react-router'
 
 /* useResource
   A base hook that allows for CRUD operations of a REST API that follows
@@ -16,8 +15,7 @@ import { useHistory } from 'react-router'
 const useResource = ({ url = '/', name, ...props }) => {
 
   const { api } = useContext(ApiContext)
-  
-	const history = useHistory()
+
 	const { isLoading, showLoading, hideLoading } =
 		useLoaders()
 	const { showAlertError } = useAlerts()
@@ -195,10 +193,7 @@ const useResource = ({ url = '/', name, ...props }) => {
 		sortDirection == 'asc'
 			? setSortDirection('desc')
 			: setSortDirection('asc')
-		setSortKey(sortBy)
-		history.push(
-			`?sort_key=${sortKey}&sort_direction=${sortDirection}`
-		)
+		setSortKey(sortBy)		
 	}
 
 	useEffect(() => {
