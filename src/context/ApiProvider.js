@@ -1,5 +1,5 @@
 import React from 'react'
-import ApiContext from 'context/ApiContext'
+import ApiContext from './ApiContext'
 import axios from 'axios'
 
 const ApiProvider = ({ url, children }) => {

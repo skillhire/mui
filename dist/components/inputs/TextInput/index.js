@@ -66,6 +66,7 @@ var TextInput = function TextInput(_ref) {
     autoComplete: "off",
     fullWidth: true,
     type: type,
+    sx: sx.inputBase,
     name: name,
     margin: margin,
     disabled: disabled,
@@ -79,3 +80,28 @@ var TextInput = function TextInput(_ref) {
 
 var _default = TextInput;
 exports["default"] = _default;
+var sx = {
+  root: {},
+  inputBase: {
+    width: '100%',
+    '& input, & textarea': {
+      '-webkit-appearance': 'none',
+      '-moz-appearance': 'none',
+      appearance: 'none',
+      borderRadius: 4,
+      backgroundColor: 'common.white',
+      height: 26,
+      padding: 1,
+      borderSize: "1px",
+      borderColor: 'common.inputBorder',
+      boxShadow: "rgb(0 0 0 / 5%) 0px 2px 4px !important"
+    }
+  },
+  IconButton: {
+    padding: '5px'
+  },
+  icon: {
+    fontSize: '20px',
+    color: '#888'
+  }
+};

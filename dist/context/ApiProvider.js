@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _ApiContext = _interopRequireDefault(require("context/ApiContext"));
+var _ApiContext = _interopRequireDefault(require("./ApiContext"));
 
 var _axios = _interopRequireDefault(require("axios"));
 
